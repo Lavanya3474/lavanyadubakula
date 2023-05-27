@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lavanya Dubakula</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><img src="./IMG_20201224_184502_196.jpg" alt=""></div>
+            <ul class="links">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="toggle-btn">
+                <i style="font-size:24px" class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown-menu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn=document.querySelector('.toggle-btn')
+        const toggleBtnIcon=document.querySelector('.toggle-btn i')
+        const dropDownMenu=document.querySelector('.dropdown-menu')
+
+        toggleBtn.onclick=function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+              ? 'fa-solid fa-xmark'
+              : 'fa-solid fa-bars'
+        }
+    
+    </script>
+
+        <div class="header-text" id="header">
+                <h4>Hello, my name is</h4>
+                <h1>Lavanya Dubakula</h1>
+                <p>I'm an undergraduate student in GVPCE and currently looking for the job opportunities in software field.<br>(software engineer,software developer)</p>
+                <a href="https://drive.google.com/file/d/1FSnTE4n76IW-5IGFsveABMLAJv5nlQ6W/view?usp=sharing">Resume</a>
+        </div>
+
+<div class="page_about" id="about">
+    <img src="IMG_20201224_184502_196.jpg" >
+            <div class="about-col-1">
+                <h1 class="sub-title">About me</h1>
+                    <p>I'm a self motivated and a quick learner person. I'm pursing computer science undergraduate degree in <br> GVPCE (2019-2023) and good at programming skills like </p>
+                        <ul class="skills">
+                        <li>c</li>
+                        <li>c++</li>
+                        <li>python</li>
+                        <li>html</li>
+                        <li>java</li>
+                        <li>css</li>
+                        <li>figma</li>
+                        </ul>
+            </div>
+</div>
+
+<div class="grid" id="projects">
+        <h1>My Projects</h1>
+        <div class="container1">
+        <div class="grid-items">
+            <div class="card">
+                <div class="card-content">
+                    <h3 class="card-header">Online management for excess food</h3>
+                    <p class="card-text"> 
+                        It is a website where people can be used for donating and requesting the excess food.
+                    </p>
+                    <div class="footer">
+                        <ul>
+                           <li>html</li>
+                            <li>css</li>
+                            <li>bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-items">
+            <div class="card">
+                <div class="card-content">
+                    <h3 class="card-header">Multiple face detection</h3>
+                    <p class="card-text"> 
+                        It is an application where we can find no.of faces & can compare accuracy between algorithms.
+                    </p>
+                    <div class="footer">
+                        <ul>
+                           <li>python</li>
+                            <li>neural network</li>
+                            <li>machine learning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-items">
+            <div class="card">
+                <div class="card-content">
+                    <h3 class="card-header">Voice-based Email sytem for blind</h3>
+                    <p class="card-text"> 
+                        Developed an application be used for general purpose like viewing the mails received from the users.
+                    </p>
+                    <div class="footer">
+                        <ul>
+                           <li>python</li>
+                            <li>machine learning</li>
+                            <li>Email</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-items">
+            <div class="card">
+                <div class="card-content">
+                    <h3 class="card-header">Email alerts on Whatsapp</h3>
+                    <p class="card-text"> 
+                        It is an application where we can fetch and send our mails from social media apps like whatsapp.
+                    </p>
+                    <div class="footer">
+                        <ul>
+                           <li>heroku</li>
+                            <li>ngrok</li>
+                            <li>sandbox</li>
+                            <li>gmail</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</div>
+
+<div id="contact" class="content">
+        <h1>Get In Touch</h1> 
+        <p>I'm looking for the opportunities. If you feel, i am eligible
+        please drop an email. I'll get back to you.</p>
+        <a href="mailto:lavanya0269@gmail.com "> say hi </a>
+        <ul class="links">
+            <li><a href="https://www.instagram.com/lavanya_dubakula/" style="font-size:15px" class="fa fa-instagram"></a></li>
+            <li><a href="https://www.linkedin.com/in/lavanya-dubakula-a892b81a3/" style="font-size:15px" class="fa fa-linkedin"></a></li>
+        </ul>
+        <p style="font-size: 20px; color:rgb(0, 0, 0);font-weight: 400;" >!...You will get more websites like this...!</p>
+    </div>
+</body>
+</html>
